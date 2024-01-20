@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: rgb(52, 120, 239);
+}
+
+.logo-name{
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-item {
+    padding-left:30px;
+    
+}
+.nav-item a{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.nav-item a:hover{
+    color: black;
+}
+
+.button-img{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 200px;
+}
+
+.button-img a{
+    margin-top: 70px;
+    background:none;
+    width: 400px;
+    color: white;
+    border:2px solid white;
+}
+.colorz{
+    width: 99vw;
+    height:900px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    opacity: 60%;
+}
+
+.para p{
+    margin-top: 80px;
+    color: white;
+   text-align: center;
+   
+}
+
+.page-1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foot{
+
+    background-color: rgb(52, 120, 239);
+}
+
+.head{
+    background-color: rgb(52, 120, 239);
+    color: white;
+    border:2px solid rgb(52, 120, 239);
+    border-radius: 10px;
+}
+
+.foot{
+    padding: 50px 0px;
+}
+
+.foot ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.foot ul li a{
+    color: white;
+    text-decoration: none;
+
+
+}
+.itemz ul li a{
+color: white;
+}
+
+.itemz ul li a:hover{
+    color: black;
+    }
+#itemz2{
+    color: white;
+    text-decoration: none;
+}
+#itemz2:hover{
+    color: black;
+}
+.deva{
+    position: absolute;
+    top: 200;
+    width: 70%;
+    height: 400px;
+    /* background-color: wheat; */
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1;
+}
+
+.contact{
+    margin: 40px;
+}
+.bottom a{
+    text-decoration: none;
+    color: Black;
+}
+.iconz{
+    position: relative;
+    top: 8px;
+    left: 0px;
+}
+.imagz img{
+    border: 2PX SOLID black;
+}
+
+.about p{
+    text-align: justify;
+}
+
+.about a{
+    text-decoration: none;
+
+}
+.about a span{
+    color: black;
+    
+}
+.btnz1{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 50px;
+    background-color: rgb(52, 120, 239);
+}
+.btnz2{
+    padding: 15px 50px;
+    color: whitesmoke;
+    background-color: rgb(9, 168, 9);
+    text-decoration: none;
+}
+.btnz1 span,.btnz2 span{
+   position: relative;
+   top: 10px;
+}
+
+.btnz1:hover,.btnz2:hover{
+    background-color: black;
+}
+.collapse span:hover{
+    background-color: black;
+    color: white;
+}

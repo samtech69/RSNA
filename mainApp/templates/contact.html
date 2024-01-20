@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h1 class="text-center p-3">Contact Us</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                   <div class="input-group">
+                    <input class="form-control mx-1" type="text" name="name" placeholder="First Name" required>
+                    <input class="form-control" type="text" name="lastname" placeholder="Last Name">
+                   </div>
+                   <div class="my-3">
+                    <input class="form-control" type="number" name="phone" placeholder="Phone" required>
+                   </div>
+                   <div class="my-3">
+                    <input class="form-control" type="email" name="email" placeholder="Email" required>
+                   </div>
+                   <div class="my-3">
+                    <textarea class="form-control" name="message" required rows="5" placeholder="How can we help you ?"></textarea>
+                   </div>
+                   <Button type="submit" class="btn btn-primary w-100 p-3 btn-lg">Submit</Button>
+                </form>
+            </div>
+            <div class="col-md-6">
+            <img src="{% static 'images/contact.jpeg' %}" width="100%" alt="">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 p-2">
+                    <a class="p-2 fs-5" href="tel:+919891366261"><span class="material-symbols-outlined p-1 iconz fs-2">
+                        call
+                        </span>+91 9891366261</a>
+                </div>
+                <div class="col-md-3 p-2">
+                    <a class="p-2 fs-5" href="mailto:rsnadietech0@gmail.com"><span class="material-symbols-outlined p-1 iconz fs-2">
+                        mail
+                        </span>rsnadietech0@gmail.com</a>
+                </div>
+                <div class="col-md-6 p-2">
+                    <p class="p-1 fs-5"><span class="material-symbols-outlined p-1 iconz fs-2">
+                        location_on
+                        </span>H-36, Sector-3, Bawana, Industrial Area Delhi-110039</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="whatsapp"><a href="https://wa.me/+919891366261">
+    <img src="{% static 'images/whatsapp.png' %}" height="50px" width="50px" alt="">
+</a></div>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="body my-5">
+  <div class="container">
+    <h1 class="text-center py-3 bg-primary mt-5 text-light">Products list</h1>
+    <div class="row">
+      {% for item in products %}
+      <div class="col-sm-6 col-md-4  my-3">
+        <div class="card" style="width: 100%;">
+          <img src="{{item.pic.url}}" class="card-img-top px-2" height="400px" width="100%" alt="...">
+          <div class="card-body">
+            <h5 class="card-title py-1 fs-4" style="text-transform: uppercase; height: 70px;">{{item.name|slice:"0:25"}}
+            </h5>
+            <p class="card-text" style="text-align: left; height: 75px;">{{item.description|slice:"0:100"}}....</p>
+
+
+            <div class="btndiv text-center py-3">
+              <a href="tel:+919891366261" class="btnz1 text-center "><span class="material-symbols-outlined py-1">
+                  call
+                </span>Call</a>
+              <a href="https://wa.me/+919891366261" class="btnz2  text-center "><span
+                  class="material-symbols-outlined py-1">
+                  chat
+                </span>Chat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h1 class="text-center py-3 bg-primary mt-5 text-light">"Items Created My Moulds"</h1>
+
+    <div class="row">
+        {% for item in results %}
+        <div class="col-sm-6 col-md-4  my-3">
+          <div class="card" style="width: 100%;">
+            <img src="{{item.pic.url}}" class="card-img-top px-2" height="400px" width="100%" alt="...">
+            <div class="card-body">
+              <h5 class="card-title py-1 fs-4" style="text-transform: uppercase; height: 70px;">
+                {{item.name|slice:"0:25"}}</h5>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="whatsapp"><a href="https://wa.me/+919891366261">
+    <img src="{% static 'images/whatsapp.png' %}" height="50px" width="50px" alt="">
+  </a></div>
+{% endblock %}

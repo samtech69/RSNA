@@ -1,0 +1,103 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+<div class="about">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h1 class="text-center p-3">About Us</h1>
+                <p class=" fs-5">
+                    Welcome to RSNA Die Tech, your premier destination for cutting-edge bottle mold solutions. As a
+                    leading company in die technology, we specialize in crafting precision molds that redefine the
+                    industry standard. With a commitment to innovation and quality, our expert team designs and
+                    manufactures molds for a diverse range of bottles. From beverage containers to pharmaceutical
+                    packaging, we cater to the unique needs of various industries.
+                </p>
+                <p><span class="text-primary">Address:</span> H-36, Sector-3, Bawana Industrial Area Delhi-110039</p>
+                
+                <p class="p-2"><a class="p-2 fs-5" href="mailto:rsnadietech0@gmail.com"><span
+                    class="material-symbols-outlined p-1 iconz fs-2">
+                    mail
+                </span>rsnadietech0@gmail.com</a></p>
+                
+                    <p class="p-2"><a class="p-2 fs-5" href="tel:+919891366261"><span class="material-symbols-outlined p-1 iconz fs-2">
+                        call
+                    </span>+91 9891366261</a></p>
+            </div>
+            
+            
+            <div class="col-md-6 my-5 imagz">
+                <img class="ms-5" src="{% static 'images/page1.jpeg' %}" width="100%" height="500px" alt="">
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-6 mt-5">
+                <img class="pt-5" src="{% static 'images/page2.jpeg' %}" width="100%" height="800px" alt="">
+
+            </div>
+            <div class="col-md-6 my-5 imagz">
+                <h1 class="text-center p-3 fs-4">"Why Choose RSNA Die Tech?"</h1>
+
+                <p class="fs-5">
+                    Precision Engineering: Our molds are crafted with meticulous attention to detail, ensuring precise
+                    and consistent results for your bottle production needs.
+                </p>
+                <p class="fs-5">
+                    Innovation at its Core: We stay at the forefront of die technology, incorporating the latest
+                    advancements to provide you with molds that meet or exceed industry standards.</p>
+
+                <p class="fs-5">
+                    Custom Solutions: Recognizing that one size doesn't fit all, we offer tailored mold designs to match
+                    your specific product requirements and branding goals.</p>
+                <p class="fs-5">
+                    Quality Assurance: At RSNA Die Tech, quality is non-negotiable. Our molds undergo rigorous testing
+                    to guarantee durability, longevity, and optimal performance.
+                </p>
+                <p class="fs-5">Environmental Responsibility: Committed to sustainability, our molds are designed to be
+                    eco-friendly
+                    and support your company's efforts towards a greener future.
+
+                </p>
+                <p class="fs-5">Collaborative Partnership: We view our clients as partners, working closely with you
+                    throughout the
+                    design and manufacturing process to ensure your vision is realized seamlessly.
+
+                </p>
+                <p class="fs-5"> Global Reach: With a worldwide presence, we serve clients globally, delivering reliable
+                    and
+                    high-quality molds to support your production needs, no matter where you are.
+
+                </p>
+                <p class=" fs-5"> Discover the RSNA Die Tech difference—where precision meets innovation. Elevate your
+                    bottle
+                    production with molds that set new standards for quality and efficiency. Contact us today to discuss
+                    how we can tailor our solutions to enhance your business's success.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="whatsapp"><a href="https://wa.me/+919891366261">
+            <img src="{% static 'images/whatsapp.png' %}" height="50px" width="50px" alt="">
+        </a></div>
+
+       
+
+
+</div>
+
+<div class="container mb-5 " >
+    <h1 class="text-center bg-primary text-light py-2" >Gallery</h1>
+    <div class="row">
+       {% for item in gallery %}
+       <div class="col-md-3 py-2" style="border: 1px solid black;">
+        <a href="{{item.pic.url}}" target="_blank"><img src="{{item.pic.url}}" alt="" width="100%" height="400px"></a>
+    </div>
+    {% endfor %}
+        
+    </div>
+</div>
+
+{% endblock %}
